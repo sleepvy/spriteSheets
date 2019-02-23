@@ -1,0 +1,73 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(10, 300px);
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "moon"
+        "ice"
+        "rocket"
+        "umbrella"
+        "cloud"
+        "balloon"
+        "bulb"
+        "sun"
+        "traffic"
+        "lamp";
+
+}
+
+
+//tablet
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+            "moon ice rocket umbrella"
+            "cloud balloon bulb sun"
+            " . traffic lamp . ";
+    }
+}
+
+#moon {
+    grid-area: moon;
+}
+
+#ce {
+    grid-area: ice;
+}
+
+#rocket {
+    grid-area: rocket;
+}
+
+#umbrella {
+    grid-area: umbrella;
+}
+
+#cloud {
+    grid-area: cloud;
+}
+
+#balloon {
+    grid-area: balloon;
+}
+
+#bulb {
+    grid-area: bulb;
+}
+
+#sun {
+    grid-area: sun;
+}
+
+#traffic {
+    grid-area: traffic;
+}
+
+#lamp {
+    grid-area: lamp;
+}

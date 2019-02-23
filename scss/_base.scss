@@ -1,0 +1,53 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+li {
+    list-style:none;
+    display: inline-block;
+    padding:15px;
+    a{
+        display: inline-block;
+        width: 300px;
+        height:300px;
+        
+        span{
+            position:absolute;
+            top:-9999em;
+            left:-9999em;
+        }
+    }
+}
+
+body {
+    font-family: $basefont;
+    color: black;
+}
+
+header {
+    text-align: center;
+    h1 {
+        font-size: 36pt;
+    }
+    a{
+        text-decoration: none;
+        color: palevioletred;
+    }
+
+}
+
+nav {
+    background-color: white;
+
+    ul {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
+
+main {
+    background-color: white;
+}
